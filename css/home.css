@@ -1,9 +1,17 @@
-main img {
-	width: 100%;
-	max-width: 400px;
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
 }
 
-main section {
+body > * {
+	scroll-snap-align: end;
+}
+
+
+section {
+	height: calc(100vh - 100px);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -11,7 +19,12 @@ main section {
 	flex-wrap: wrap;
 }
 
-main section > div {
+section img {
+	width: 100%;
+	max-width: 400px;
+}
+
+section > div {
 	margin: 20px;
 }
 
@@ -26,4 +39,15 @@ div.action-text {
 div.action-text h2 {
 	font-size: 6.0rem;
 	line-height: 1;
+}
+
+@media only screen and (max-width: 800px) {
+
+    /*menu de navegação (mobile)*/
+    
+	/* disable snap scroll on mobile */
+	body {
+		scroll-snap-type: none;
+	}
+    
 }
