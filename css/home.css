@@ -178,7 +178,7 @@ div.action-text h2 {
 	}
 }
 
-@media only screen and (max-height: 800) {
+@media only screen and (max-height: 900px) {
 	section {
 		height: auto;
 	}
