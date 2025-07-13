@@ -71,10 +71,7 @@ div.action-text h2 {
 #quem-somos .img-membros {
 	margin: 0;
 	flex: 0.5;
-	/* background-image: url("../imgs/quem-somos.png"); */
-	/* background-position: center; */
 	align-self: stretch;
-	/* background-size: cover; */
 }
 
 
@@ -87,29 +84,47 @@ div.action-text h2 {
 	flex: 1;
 }
 
+#quem-somos div.action-text {
+	margin: 0;
+	padding: 0 25px;
+}
+
 #quem-somos .pilares h3 {
-	font-size: 4.0rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3.4rem;
+	height: 100px;
+	margin: 10px 0;
 }
 
 #quem-somos .pilares {
 	height: 300px;
+	overflow: hidden;
+	text-align: center;
 }
 
 #quem-somos .pilares div {
 	width: 100%;
 	max-width: 300px;
-	margin: 20px 0;
+	padding: 20px 10px;
 }
 
 #quem-somos .pilares div img {
 	width: 100%;
-	margin: 40px;
 }
 
 #quem-somos .logos {
 	align-items: center;
 	text-align: center;
 	padding: 30px;
+}
+
+#quem-somos .logos img {
+	width: 100%;
+	max-width: 120px;
+	min-width: 100px;
+	margin: 10px;
 }
 
 #quem-somos .text {
@@ -124,7 +139,7 @@ div.action-text h2 {
 }
 
 #quem-somos .text p {
-	font-size: 3.0rem;
+	font-size: 2.8rem;
 	line-height: 1.5;
 	text-align: justify;
 }
@@ -136,11 +151,6 @@ div.action-text h2 {
 	object-fit: cover;
 	margin: 0;
 }
-
-/* #quem-somos div.action-text { */
-/* 	flex: 1.5 */
-/* } */
-
 
 @media only screen and (max-width: 1100px) {
 
@@ -155,6 +165,14 @@ div.action-text h2 {
 	div.action-text {
 		align-items: center;
 		text-align: center;
+	}
+
+	#quem-somos .pilares h3 {
+		font-size: 3.2vw;
+	}
+
+	#quem-somos .text p {
+		font-size: 2.0rem;
 	}
 }
 
@@ -194,7 +212,33 @@ div.action-text h2 {
 		font-size: 2.8rem;
 		text-align: center;
 	}
-    
+
+	#quem-somos .content {
+		flex-direction: column;
+	}
+
+	#quem-somos .logos {
+		flex-direction: row;
+	}
+
+	#quem-somos .pilares {
+		flex-direction: column;
+	}
+
+	#quem-somos .pilares div {
+		max-width: 100%;
+	}
+
+	#quem-somos .pilares h3 {
+		font-size: 3.4rem;
+	}
+
+	#quem-somos .pilares img {
+		height: 200px;
+		object-fit: cover;
+		object-position: top;
+	}
+
 	#quem-somos {
 		flex-direction: column-reverse;
 	}
