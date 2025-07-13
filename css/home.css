@@ -54,6 +54,7 @@ div.action-text h2 {
 }
 
 #projetos div {
+	width: 100%;
 	margin: 0;
 	padding: 50px;
 	display: flex;
@@ -102,6 +103,7 @@ div.action-text h2 {
 	height: 300px;
 	overflow: hidden;
 	text-align: center;
+	justify-content: space-evenly;
 }
 
 #quem-somos .pilares div {
