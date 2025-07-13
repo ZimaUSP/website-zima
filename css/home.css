@@ -3,20 +3,22 @@ body {
 	overflow-y: auto;
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
+	scroll-padding-top: 87.72px;
 }
 
 body > * {
-	scroll-snap-align: end;
+	scroll-snap-align: start;
 }
 
 
 section {
-	height: calc(100vh - 100px);
+	height: calc(100vh - 87.72px);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-content: space-evenly;
-	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
 }
 
 section img {
@@ -66,10 +68,88 @@ div.action-text h2 {
 	line-height: 1.5;
 }
 
+#quem-somos .img-membros {
+	margin: 0;
+	flex: 0.5;
+	/* background-image: url("../imgs/quem-somos.png"); */
+	/* background-position: center; */
+	align-self: stretch;
+	/* background-size: cover; */
+}
+
+
+#quem-somos > div {
+	margin: 10px 50px;
+}
+
+#quem-somos div {
+	align-self: stretch;
+	flex: 1;
+}
+
+#quem-somos .pilares h3 {
+	font-size: 4.0rem;
+}
+
+#quem-somos .pilares {
+	height: 300px;
+}
+
+#quem-somos .pilares div {
+	width: 100%;
+	max-width: 300px;
+	margin: 20px 0;
+}
+
+#quem-somos .pilares div img {
+	width: 100%;
+	margin: 40px;
+}
+
+#quem-somos .logos {
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+}
+
+#quem-somos .text {
+	flex: 4;
+	margin: 0 10px;
+	align-items: flex-start;
+}
+
+#quem-somos .text h2 {
+	text-align: left;
+	margin: 0;
+}
+
+#quem-somos .text p {
+	font-size: 3.0rem;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.img-membros img {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	margin: 0;
+}
+
+/* #quem-somos div.action-text { */
+/* 	flex: 1.5 */
+/* } */
+
+
 @media only screen and (max-width: 1100px) {
 
+	section {
+		height: calc(100vh - 147.72px);
+	}
+
 	body {
-		scroll-padding-top: 130px;
+		scroll-padding-top: 147.72px;
 	}
 
 	div.action-text {
@@ -78,17 +158,32 @@ div.action-text h2 {
 	}
 }
 
+@media only screen and (max-height: 800) {
+	section {
+		height: auto;
+	}
+}
+
 @media only screen and (max-width: 800px) {
 
     /*menu de navegação (mobile)*/
 
-	section {
-		height: calc(100vh - 150px);
-	}
-    
 	/* disable snap scroll on mobile */
+	/* body { */
+	/* 	scroll-snap-type: none; */
+	/* } */
+
+	section {
+		height: auto;
+		padding: 5px;
+	}
+
 	body {
-		scroll-snap-type: none;
+		scroll-padding-top: 87.72px;
+	}
+
+	body > * {
+		scroll-snap-align: start;
 	}
 
 	#projetos div {
@@ -96,7 +191,15 @@ div.action-text h2 {
 	}
 
 	#projetos div.action-text p {
-		font-size: 3rem;
+		font-size: 2.8rem;
+		text-align: center;
 	}
     
+	#quem-somos {
+		flex-direction: column-reverse;
+	}
+
+	#quem-somos div {
+		margin: 0;
+	}
 }

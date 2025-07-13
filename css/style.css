@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display&family=Roboto&display=swap');
 
 * {
-    margin: 0 auto; 
+    margin: 0; 
     padding: 0;
 	box-sizing: border-box;
 }
@@ -204,6 +204,29 @@ nav ul li {
 
 /*conteúdo principal da página*/
 
+.container-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
 main {
     width: 100%;
     /* max-width: 1280px; */
@@ -280,4 +303,7 @@ footer h4 {
 		display: none;
 	}
 
+	a.button {
+		flex: 1;
+	}
 }
