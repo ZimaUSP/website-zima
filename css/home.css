@@ -23,6 +23,10 @@ section {
 
 section img {
 	width: 100%;
+}
+
+img.img-projetos {
+	width: 100%;
 	max-width: 400px;
 }
 
@@ -152,6 +156,91 @@ div.action-text h2 {
 	height: 100%;
 	object-fit: cover;
 	margin: 0;
+}
+
+div.img-equipe h2 {
+	margin: 10px;
+	text-transform: capitalize;
+	font-size: 4.0rem;
+	text-align: center;
+}
+
+div.img-equipe div {
+	background-color: red;
+	width: 400px;
+	height: 400px;
+	border-radius: 25%;
+	margin: 10px;
+}
+
+div.img-equipe div img {
+	width: 100%;
+	height: 100%;
+	border-radius: 25%;
+	object-fit: none;
+	object-position: center;
+}
+
+.gradient {
+	width: 75%;
+	height: 75%;
+}
+
+.integrantes {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	margin: 50px 50px;
+	flex: 1;
+	padding: 0;
+	background: #E47EB2;
+	background: radial-gradient(circle, rgba(228, 126, 178, 1) 0%, rgba(253, 23, 140, 1) 15%, rgba(113, 0, 166, 1) 30%, rgba(113, 0, 166, 0) 60%);
+}
+
+.integrantes a.button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.integrantes img {
+	position: absolute;
+	border-radius: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 1;
+}
+
+.integrantes img#membro1 {
+	width: 200px;
+	height: 200px;
+	top: 20px;
+	left: 20px;
+	transform: rotate(15deg);
+}
+
+.integrantes img#membro2 {
+	width: 150px;
+	height: 150px;
+	top: 200px;
+	left: 20px;
+	transform: rotate(0deg);
+}
+.integrantes img#membro3 {
+	width: 120px;
+	height: 120px;
+	top: 20px;
+	left: 200px;
+	transform: rotate(0deg);
+}
+
+.integrantes img#membro4 {
+	width: 90px;
+	height: 90px;
+	top: 200px;
+	left: 200px;
+	transform: rotate(0deg);
 }
 
 @media only screen and (max-width: 1100px) {
