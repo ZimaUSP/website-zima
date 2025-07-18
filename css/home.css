@@ -6,7 +6,7 @@ body {
 	scroll-padding-top: 80px;
 }
 
-body > * {
+body>* {
 	scroll-snap-align: start;
 }
 
@@ -25,7 +25,7 @@ section img {
 	width: 100%;
 }
 
-section > div {
+section>div {
 	margin: 10px 100px;
 }
 
@@ -80,6 +80,7 @@ section > div {
 	transform: rotate(-5deg);
 	z-index: 2;
 }
+
 .img-projetos img#golgi {
 	top: 10px;
 	left: 50%;
@@ -130,7 +131,7 @@ div.action-text h2 {
 }
 
 
-#quem-somos > div {
+#quem-somos>div {
 	margin: 10px 50px;
 }
 
@@ -295,6 +296,7 @@ div.img-equipe div img {
 	left: 20px;
 	transform: rotate(0deg);
 }
+
 .integrantes img#membro3 {
 	width: 120px;
 	height: 120px;
@@ -384,6 +386,7 @@ div.img-equipe div img {
 		left: 20px;
 		transform: rotate(0deg);
 	}
+
 	.integrantes img#membro3 {
 		width: 120px;
 		height: 120px;
@@ -409,7 +412,7 @@ div.img-equipe div img {
 
 @media only screen and (max-width: 800px) {
 
-    /*menu de navegação (mobile)*/
+	/*menu de navegação (mobile)*/
 
 	/* disable snap scroll on mobile */
 	/* body { */
@@ -425,7 +428,7 @@ div.img-equipe div img {
 		scroll-padding-top: 80px;
 	}
 
-	body > * {
+	body>* {
 		scroll-snap-align: start;
 	}
 
