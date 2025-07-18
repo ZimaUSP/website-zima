@@ -3,7 +3,7 @@ body {
 	overflow-y: auto;
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
-	scroll-padding-top: 87.72px;
+	scroll-padding-top: 80px;
 }
 
 body > * {
@@ -12,7 +12,7 @@ body > * {
 
 
 section {
-	height: calc(100vh - 87.72px);
+	height: calc(100vh - 80px);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -314,11 +314,11 @@ div.img-equipe div img {
 @media only screen and (max-width: 1100px) {
 
 	section {
-		height: calc(100vh - 147.72px);
+		height: calc(100vh - 148px);
 	}
 
 	body {
-		scroll-padding-top: 147.72px;
+		scroll-padding-top: 148px;
 	}
 
 	.img-projetos {
@@ -422,7 +422,7 @@ div.img-equipe div img {
 	}
 
 	body {
-		scroll-padding-top: 87.72px;
+		scroll-padding-top: 80px;
 	}
 
 	body > * {

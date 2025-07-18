@@ -40,7 +40,7 @@ html {
 	font-size: 10px;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 body {
@@ -53,7 +53,7 @@ body {
 
 /*cores*/
 
-h1, nav p, footer {color: white;}
+h1, header p, footer {color: white;}
 
 body {
     background-color: #131d34;
@@ -93,8 +93,10 @@ span.blue {
 header a, nav a {text-decoration: none;}
 
 header {
+	display: flex;
+	justify-content: flex-start;
     width: 100%;
-	height: auto;
+	height: 80px;
     box-sizing: border-box;
 	position: sticky;
 	top: 0;
@@ -113,7 +115,7 @@ header h1 {
 /*menu de navegação (desktop)*/
 
 nav {
-    width: 100%;
+    /* width: 100%; */
 	display: flex;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 	padding: 10px 0;
@@ -142,7 +144,7 @@ nav > ul {
 	margin: 0;
 }
 
-nav a {
+header a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -151,7 +153,7 @@ nav a {
 	flex-shrink: 1;
 }
 
-nav > a img {
+header > a img {
 	width: 64px;
 }
 
@@ -168,33 +170,27 @@ nav p {
     padding: 8px 15px;
 }
 
-nav ul li {
-    
-    float: left;
-    
-}
-
 /*ativação menu mobile*/
 
 .top, .mid, .bottom {
-
     width: 0;
     height: 0px;
-    margin: 5px auto;
+}
 
+.mid {
+	margin: 5px 0;
 }
 
 .btn_menu {
-
     width: 0px;
     height: 0px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 14px;
+    left: 14px;
     padding: 10px;
     z-index: 10;
     cursor: pointer;
-
+	box-sizing: content-box;
 }
 
 .btn_menu, .top, .mid, .bottom {transition: transform 0.3s ease-out;}
@@ -275,6 +271,14 @@ footer h4 {
 }
 
 @media only screen and (max-width: 1100px) {
+
+	header {
+		height: 148px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	nav {
 		flex-direction: column;
 	}
@@ -284,10 +288,76 @@ footer h4 {
 
 	/*menu de navegação (mobile)*/
 
-	/* remove dektop menu */
-	nav ul {
-		display: none;
+	header {
+		height: 80px;
 	}
+
+    nav {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease-out;
+        overflow-y: auto;
+        z-index: 9;
+    }
+
+    nav ul {
+        position: absolute;
+        width: 100%;
+        top: 72px;
+    }
+
+    nav ul {
+        max-height: 100%;
+    }
+
+    nav ul li {
+        width: 100% !important;
+    }
+
+    nav p {
+        font-size: 4.0rem;
+    }
+
+	/*ativação menu lateral*/
+
+	.btn_menu {
+		width: 32px;
+		height: 32px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+    .top, .mid, .bottom {
+        background: white;
+        width: 100%;
+        height: 5px;
+        border-radius: 40px;
+    }
+
+    .on .btn_menu {
+        transform: rotate(270deg);
+    }
+
+    .on nav{
+        transform: translateX(100%);
+    }
+
+    .on .btn_menu .top {
+        transform: rotate(45deg) translate(7px, 7px)
+    }
+
+    .on .btn_menu .mid {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    .on .btn_menu .bottom {
+        transform: rotate(-45deg) translate(7px, -7px)
+    }
 
 	p.button {
 		flex: 1;
