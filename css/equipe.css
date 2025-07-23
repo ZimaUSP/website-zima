@@ -1,0 +1,95 @@
+main {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+main h2 {
+	font-size: 4.0rem;
+	margin: 10px;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+div.section-bar {
+	width: 100%;
+	padding: 5px 10px;
+	background-color: turquoise;
+	cursor: pointer
+}
+
+div.collapsible-bar {
+	background-color: paleturquoise;
+}
+
+div.section-bar * {
+	pointer-events: none;
+	user-select: none;
+}
+
+.collapse div:not(.collapsible-bar) {
+	display: none;
+}
+
+div.carousel {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+div.carousel .carousel-btn {
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	text-align: center;
+	flex: 0 0 auto;
+	font-size: 1.6rem;
+	border: 3px solid white;
+	border-radius: 100%;
+	user-select: none;
+}
+
+ul.images {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	padding: 20px;
+	gap: 100px;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+
+ul.images li {
+	display: block;
+	scroll-snap-align: center;
+	font-size: 0;
+	list-style-type: none;
+	padding: 20px;
+	box-sizing: content-box;
+	flex: 0 0 auto;
+}
+
+ul.images li:nth-child(even) {
+	background-color: teal;
+}
+
+
+ul.images img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	object-fit: cover;
+	object-position: center;
+}
