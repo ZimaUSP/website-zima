@@ -1,0 +1,64 @@
+main {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1280px;
+	padding: 10px
+}
+
+section.select-parceiro {
+	display: flex;
+	gap: 20px;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+section.select-parceiro img {
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20%;
+	border: 4px solid white;
+	transition: all 0.3s ease-out;
+	cursor: pointer;
+}
+
+section.select-parceiro img:hover {
+	width: 135px;
+	height: 135px;
+	border-color: #FC466B;
+}
+
+section.info-parceiro {
+	display: none;
+	flex-direction: column;
+}
+
+section.info-parceiro.selected {
+	display: flex;
+}
+
+section.info-parceiro h1 {
+	font-size: 4.2rem;
+	padding: 15px 5px;
+}
+
+section.info-parceiro > div {
+	display: flex;
+	padding: 10px;
+	gap: 25px;
+}
+
+section.info-parceiro > div > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 4;
+}
+
+section.info-parceiro div p {
+	font-size: 2.8rem;
+	text-align: justify;
+	line-height: 1.5;
+	flex: 6;
+}

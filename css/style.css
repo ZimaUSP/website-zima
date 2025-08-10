@@ -52,6 +52,10 @@ body {
 	font-family: 'Roboto', arial, sans-serif;
 }
 
+img {
+	width: 100%;
+}
+
 /*cores*/
 
 h1,
