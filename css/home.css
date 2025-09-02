@@ -34,7 +34,7 @@ section>div {
 }
 
 #zima div.action-text {
-	max-width: 300px;
+	max-width: 400px;
 	margin: 0;
 }
 
@@ -44,22 +44,22 @@ section>div {
 	min-width: 450px;
 	min-height: 450px;
 	position: relative;
-	margin: 0;
+	margin: 60px;
 	padding: 0;
 }
 
 .img-projetos .gradient {
-	width: 150%;
-	height: 150%;
-	top: -25%;
-	left: -25%;
+	width: 120%;
+	height: 120%;
+	top: -15%;
+	left: -0%;
 	background: #E47EB2;
 	background: radial-gradient(circle, rgba(113, 0, 166, 1) 0%, rgba(228, 126, 178, 1) 20%, rgba(253, 23, 140, 1) 30%, rgba(113, 0, 166, 1) 45%, rgba(113, 0, 166, 0) 60%);
 }
 
 .img-projetos img {
-	width: 250px;
-	height: 250px;
+	width: 210px;
+	height: 210px;
 	position: absolute;
 	border-radius: 12%;
 	object-fit: cover;
@@ -68,22 +68,22 @@ section>div {
 }
 
 .img-projetos img#ciclo {
-	top: 25px;
-	left: -15%;
+	top: 10px;
+	left: 10%;
 	transform: rotate(5deg);
 	z-index: 1;
 }
 
 .img-projetos img#hema {
-	top: 200px;
-	left: 25%;
+	top: 160px;
+	left: 35%;
 	transform: rotate(-5deg);
 	z-index: 2;
 }
 
 .img-projetos img#golgi {
-	top: 10px;
-	left: 50%;
+	top: 20px;
+	left: 65%;
 	transform: rotate(-5deg);
 	z-index: 1;
 }
@@ -99,8 +99,20 @@ div.action-text {
 }
 
 div.action-text h2 {
-	font-size: 6.8rem;
+	font-size: 8rem;
 	line-height: 1;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+div.action-text a {
+	font-size: 3.2rem;
+	line-height: 1.5;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	margin-top: 25px;
 }
 
 #projetos {
@@ -110,8 +122,9 @@ div.action-text h2 {
 
 #projetos div {
 	width: 100%;
-	margin: 0;
-	padding: 50px;
+	margin: 30px;
+	margin-bottom: 40px;
+	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -119,9 +132,27 @@ div.action-text h2 {
 }
 
 #projetos div.action-text p {
-	font-size: 4.2rem;
+	font-size: 3.8rem;
+	margin-top: 10px;
 	text-align: justify;
 	line-height: 1.5;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.projetos-buttons {
+	margin-top: -30px; /* Move buttons up */
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	transition: background-color 0.3s ease-out;
+	font-size: 2.4rem;
+	color: #fff;
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	border-radius: 10px;
 }
 
 #quem-somos .img-membros {
