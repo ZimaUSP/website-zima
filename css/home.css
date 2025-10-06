@@ -267,7 +267,8 @@ div.action-text a {
 
 #equipe {
 	justify-content: space-evenly;
-	margin-bottom: 30px;
+	margin-bottom: -100px;
+	margin-top: 20px;
 }
 
 .img-membros img {
@@ -279,36 +280,47 @@ div.action-text a {
 }
 
 div.img-equipe {
-	margin: 50px;
 	flex: 0;
 }
 
 div.img-equipe h2 {
-	margin: 0px;
+	margin-bottom: -120px;
 	text-transform: capitalize;
 	font-size: 4.0rem;
 	text-align: center;
 }
 
-/* div.img-equipe { */
-/* 	width: 400px; */
-/* 	height: 400px; */
-/* } */
-
 div.img-equipe div {
-	background-color: red;
 	width: 350px;
 	height: 350px;
 	border-radius: 25%;
 	margin: 10px;
+	position:relative;
 }
 
-div.img-equipe div img {
+div.img-equipe div img#imagem-equipe {
 	width: 100%;
 	height: 100%;
 	border-radius: 25%;
 	object-fit: none;
 	object-position: center;
+	position:absolute;
+	top: 40%;
+	z-index: 1;
+}
+
+div.img-equipe div img#circuito-impresso-2 {
+	width: 120%;
+	height: 80%;
+	position: relative;
+	left: -60%;
+	top: -30%;
+	object-position: center;
+	transform:rotateX(180deg);
+	z-index: 0;
+	opacity: 0.3;
+	-webkit-mask-image: linear-gradient(to top, black 80%, transparent 100%);
+	mask-image: linear-gradient(to top, black 80%, transparent 100%);
 }
 
 .gradient {
@@ -317,7 +329,7 @@ div.img-equipe div img {
 	background: #E47EB2;
 	background: radial-gradient(circle, rgba(228, 126, 178, 1) 0%, rgba(253, 23, 140, 1) 15%, rgba(113, 0, 166, 1) 30%, rgba(113, 0, 166, 0) 60%);
 	position: absolute;
-	top: -12.5%;
+	top: -30%;
 	left: -12.5%;
 }
 
@@ -333,7 +345,7 @@ div.img-equipe div img {
 
 .integrantes p.button {
 	position: absolute;
-	top: 40px;
+	top: -10%;
 	left: -10px;
 	z-index: 2;
 	font-family: 'poppins', sans-serif;
@@ -352,7 +364,7 @@ div.img-equipe div img {
 .integrantes img#membro1 {
 	width: 200px;
 	height: 200px;
-	top: 70px;
+	top: -20px;
 	left: 50px;
 	transform: rotate(-5deg);
 	object-fit: cover;
@@ -362,7 +374,7 @@ div.img-equipe div img {
 .integrantes img#membro2 {
 	width: 130px;
 	height: 130px;
-	top: 120px;
+	top: 20px;
 	left: 260px;
 	transform: rotate(0deg);
 }
@@ -370,7 +382,7 @@ div.img-equipe div img {
 .integrantes img#membro3 {
 	width: 150px;
 	height: 150px;
-	top: 270px;
+	top: 180px;
 	left: 120px;
 	transform: rotate(0deg);
 }
@@ -378,7 +390,7 @@ div.img-equipe div img {
 .integrantes img#membro4 {
 	width: 90px;
 	height: 90px;
-	top: 260px;
+	top: 160px;
 	left: 280px;
 	transform: rotate(0deg);
 }
