@@ -1,0 +1,138 @@
+main {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+main p {
+	font-size: 2rem;
+	line-height: 1.5;
+	margin: 10px;
+	text-align: justify;
+	font-family: "poppins", sans-serif;
+	margin-bottom: 30px;
+}
+
+main section {
+	display: flex;
+	align-items: center;
+}
+
+section div.content {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+section div.content img {
+	height:auto;
+	width:190px;
+	transform: translateX(-10px);
+}
+
+
+div.title {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 30px;
+	margin: 20px 0px;
+	max-width: 32vw;
+	border-top-left-radius: 90px;
+	border-bottom-left-radius: 90px;
+	height: 80px;
+	background: linear-gradient(90deg, var(--gradColor1), var(--gradColor2));
+	font-family: "open sans", sans-serif;
+	font-size: 3.2rem;
+	font-weight: 500;
+}
+
+div.img {
+	/* background: red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+	margin: 20px;
+	min-width: 400px;
+	width: 400px;
+	height: 400px;
+}
+
+div.img img {
+	width: 100%;
+}
+
+div.caption {
+	width: 90vw;
+	height: 70vh;
+	margin-top: -400px;
+}
+
+div.caption img {
+	max-width: 500px;
+	width: 250px;
+}
+
+div.caption img#circle-frame{
+	position: relative;
+	z-index: 2;
+	left: 20%;
+	margin-bottom: 30px;
+}
+
+div.caption img#medico {
+	width: 220px;
+	position: relative;
+	justify-content: center;
+	border-radius: 50%;
+	top: 240px;
+	left: 25%;
+}
+
+div.caption h3{
+	font-size: 2.0rem;
+	font-family: "open sans", sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.coluna{
+	margin-top: 40px;
+	justify-items: center;
+}
+
+div.caption p {
+	font-size: 2.0rem;
+	font-family: "open sans", sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+div p#quote {
+	font-size: 2.0rem;
+	font-family: "open sans", sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 20px;
+}
+
+div p#saiba-mais{
+	text-align: center;
+}
+
+div#buttons {
+	margin-top: 30px; 
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	transition: background-color 0.3s ease-out;
+	font-size: 2.4rem;
+	color: #fff;
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	border-radius: 10px;
+}

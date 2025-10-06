@@ -9,17 +9,28 @@ main p {
 	line-height: 1.5;
 	margin: 10px;
 	text-align: justify;
+	text-align: justify;
+	font-family: "Open Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 350;
+  	font-style: normal;
+  	font-size: 2rem;
+	margin-bottom: 20px;
+	margin-right: 40px;
 }
 
 .about {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
+	margin-bottom: 60px;
+	margin-top: 60px;
 }
 
 .about .img {
 	flex: 2;
+	rotate: 90deg;
 }
 
 .about .img {
@@ -33,7 +44,9 @@ main p {
 }
 
 .about .info p {
-	text-align: justify;
+	margin: 0 40px;
+	margin-top: 60px;
+	margin-bottom: -20px;
 }
 
 .about .info img {
@@ -50,17 +63,51 @@ main p {
 .about .info .logo div.title {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+}
+
+.about .upper-logo {
+	display: flex;
+	justify-content: center;
+	align-items: border-box;
+	margin-bottom: -30px;
+}
+
+.about .upper-logo img {
+	width: 170px;
+	max-width: 100%;
+	height: auto;
+	margin: 0 200px;
+	object-fit: contain;
+	opacity: 0.5;
+	filter:
+		brightness(0)      /* Converte para preto */
+        invert(1)         /* Inverte para branco */
+        brightness(1.2)   /* Ajusta o brilho final */
+        contrast(1.1);    /* Melhora a definição */
+}
+
+.about .info .logo div.title img {
+	width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    object-fit: contain;
 }
 
 .about .info .logo div.subtitle {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10px 20px;
+	padding: 10px 30px;
 	border-radius: 30px;
-	border: 4px solid white;
-	font-size: 1.2rem;
+	border: 2px solid white;
+	font-size: 1.3rem;
+	font-family: "Bebas Neue", sans-serif;
+  	font-weight: 100;
+  	font-style: normal;
+	word-spacing: 20px;
+	letter-spacing: 10px;
 }
 
 div.stats {
@@ -70,6 +117,7 @@ div.stats {
 	background: linear-gradient(90deg, #024AAD, rgba(0, 0, 0, 0));
 	flex: 2;
 	z-index: -2;
+	flex: 0 0 35%;
 }
 
 div.stats > div {
@@ -77,52 +125,193 @@ div.stats > div {
 }
 
 div.stats > div p {
-	top: 15px;
-	left: 25px;
+	top: 30px;
+	left: 40px;
 	position: absolute;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+	font-family: "Open Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 350;
+  	font-style: normal;
+  	font-size: 2rem;
 }
 
 div.stats h3 {
 	color: #39D5FF;
-	font-size: 8.0rem;
-	text-shadow: 2px 2px 0px #9340FF;
+	font-size: 9.5rem;
+	text-shadow: 4px 4px 0px #9340FF;
+	opacity: 0.5;
+	font-family: "Open Sans", sans-serif;
 }
 
 div.content {
 	flex: 2;
+	margin-top: 40px;
+	margin-bottom: -40px;
 }
 
 .pilares h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 3.4rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 2.4rem;
 	height: 100px;
-	margin: 10px 0;
+	margin: 0px 0;
 }
 
 .pilares {
-	height: 400px;
+	height: 75vh;
 	overflow: hidden;
 	text-align: center;
 	justify-content: space-evenly;
+	margin-top: -50px;
 }
 
 .pilares div {
 	width: 100%;
-	max-width: 300px;
-	padding: 20px 10px;
+	max-width: 30vw;
 }
 
 .pilares div img {
+	width: 50%;
+	max-height: 40vh;
+	object-fit: cover;
+	object-position: top;
+	align-items: baseline;
+}
+
+.pilares div img#pilar-magenta {
+	transform:translateY(0px);
+	mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+.pilares div img#pilar-lavender {
+	transform:translateY(50px);
+	mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+	mask-position: 0 214px;
+}
+.pilares div img#pilar-blue {
+	transform:translateY(100px);
+	mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+	mask-position: 0 180px;
+}
+
+.pilares div h2 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 2.2rem;
+	margin: 0 0;
+	letter-spacing: 1px;
+}
+
+.pilares div h3 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 1.5rem;
+}
+
+.pilares div h2#h2-magenta{
+	transform:translateY(50px);
+}
+.pilares div h3#h3-magenta{
+	transform:translateY(20px);
+}
+
+.pilares div h2#h2-lavender{
+	transform:translateY(80px);
+}
+.pilares div h3#h3-lavender{
+	transform:translateY(60px);
+}
+
+.pilares div h2#h2-blue{
+	transform:translateY(130px);
+}
+.pilares div h3#h3-blue{
+	transform:translateY(110px);
+}
+
+div.nossa-historia p{
+	margin-top: 60px;
+	margin-bottom:40px;
+	margin-left: 250px;
+	margin-right:250px;
+}
+
+div.nossa-historia h2{
+	font-size: 3.5rem;
+	margin-bottom: 20px;
+	margin-left: 200px;
+	margin-right: 200px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+div.carousel-historia {
 	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+div.carousel-historia .carousel-historia-btn {
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	text-align: center;
+	flex: 0 0 auto;
+	font-size: 2rem;
+	user-select: none;
+	color: white;
+}
+
+div.carousel-historia ul{
+	display: flex;
+	list-style: none;
+	width: 100%;
+	padding: 10px;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+
+div.carousel-historia ul li {
+	display: block;
+	scroll-snap-align: center;
+	font-size: 2.5rem;
+	list-style-type: none;
+	padding: 10px;
+	box-sizing: content-box;
+	flex: 0 0 auto;
+	position: relative;
+	width: 28vw;
+}
+
+.carousel-historia ul li h3 {
+	font-family: "Open Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 1550;
+  	font-style: normal;
+	letter-spacing: 3px;
 }
 
 div.carousel {
 	width: 100%;
 	display: flex;
 	align-items: center;
+	padding: 10px 20px;
+	margin-bottom: 60px;
 }
 
 div.carousel .carousel-btn {
@@ -136,16 +325,15 @@ div.carousel .carousel-btn {
 	text-align: center;
 	flex: 0 0 auto;
 	font-size: 1.6rem;
-	border: 3px solid white;
-	border-radius: 100%;
 	user-select: none;
 }
+
 
 div.carousel ul{
 	display: flex;
 	list-style: none;
 	width: 100%;
-	padding: 20px;
+	padding: 10px;
 	gap: 100px;
 	overflow-x: scroll;
 	scroll-snap-type: x mandatory;
@@ -154,23 +342,46 @@ div.carousel ul{
 
 div.carousel ul li {
 	display: block;
+	border-radius: 10%;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
 	scroll-snap-align: center;
-	font-size: 0;
 	list-style-type: none;
-	padding: 20px;
+	padding: 15px;
 	box-sizing: content-box;
 	flex: 0 0 auto;
+	width: 25vw;
 }
 
-div.carousel ul li:nth-child(even) {
-	background-color: teal;
+.carousel ul li h3 {
+	font-family: "Open Sans", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 1550;
+  	font-style: normal;
+	letter-spacing: 3px;
+}
+
+div.carousel ul li:nth-child(3n) {
+	background-color: #024aad;
+	background-image: linear-gradient(180deg, #4d02ad, #101728);
+}
+
+div.carousel ul li:nth-child(3n+1) {
+	background-color: #024aad;
+	background-image: linear-gradient(180deg, #ad199e, #101728);
+}
+
+div.carousel ul li:nth-child(3n+2) {
+	background-color: #024aad;
+	background-image: linear-gradient(180deg, #024aad, #101728);
 }
 
 
 div.carousel ul img {
-	width: 100px;
-	height: 100px;
-	border-radius: 100%;
+	width: 25vw;
+	height: 15vw;
+	border-radius: 10%;
 	object-fit: cover;
 	object-position: center;
 }
