@@ -29,7 +29,7 @@ section.select-parceiro #img-circuibras {
 	height: 150px;
 }
 
-section.select-parceiro #img-circuibras2 {
+section.select-parceiro #img-SW {
 	top: 30px;
 	left: -140px;
 	position: relative;
@@ -45,7 +45,7 @@ section.select-parceiro #img-circuibras3 {
 	height: 150px;
 }
 
-section.select-parceiro #img-circuibras5 {
+section.select-parceiro #img-ADP {
 	top: -150px;
 	left: 40px;
 	position: relative;
@@ -53,7 +53,7 @@ section.select-parceiro #img-circuibras5 {
 	height: 160px;
 }
 
-section.select-parceiro #img-circuibras6 {
+section.select-parceiro #img-Ansys {
 	top: -80px;
 	right: -240px;
 	position: relative;
@@ -143,6 +143,24 @@ section.info-parceiro > div > div {
 }
 
 section.info-parceiro div p {
+	font-size: 2rem;
+	text-align: justify;
+	line-height: 1.5;
+	flex: 6;
+	font-family: "poppins", sans-serif;
+	margin-top: 30px;
+}
+
+h2 {
+	font-size: 4.0rem;
+	margin: 10px;
+	font-family: "Lexend Deca", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 450;
+  	font-style: normal;
+}
+
+div p {
 	font-size: 2rem;
 	text-align: justify;
 	line-height: 1.5;
