@@ -296,6 +296,7 @@ div.carousel-historia ul li {
 	flex: 0 0 auto;
 	position: relative;
 	width: 28vw;
+	text-align: left;
 }
 
 .carousel-historia ul li h3 {
@@ -304,6 +305,10 @@ div.carousel-historia ul li {
   	font-weight: 1550;
   	font-style: normal;
 	letter-spacing: 3px;
+}
+
+.carousel-historia ul li p {
+	text-align: left;
 }
 
 div.carousel {
@@ -351,7 +356,7 @@ div.carousel ul li {
 	padding: 15px;
 	box-sizing: content-box;
 	flex: 0 0 auto;
-	width: 25vw;
+	width: 30vw;
 }
 
 .carousel ul li h3 {
@@ -360,6 +365,11 @@ div.carousel ul li {
   	font-weight: 1550;
   	font-style: normal;
 	letter-spacing: 3px;
+}
+
+.carousel ul li p {
+	text-align: left;
+	font-size: 1.6rem;
 }
 
 div.carousel ul li:nth-child(3n) {
@@ -379,7 +389,7 @@ div.carousel ul li:nth-child(3n+2) {
 
 
 div.carousel ul img {
-	width: 25vw;
+	width: 30vw;
 	height: 15vw;
 	border-radius: 10%;
 	object-fit: cover;
