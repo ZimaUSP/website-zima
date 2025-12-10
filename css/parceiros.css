@@ -1,6 +1,6 @@
 main {
 	width: 100%;
-	margin-top: -50px;
+	margin: 0 auto;
 	max-width: 1280px;
 	padding: 10px
 }
@@ -115,12 +115,11 @@ section.select-parceiro img:hover {
 section.info-parceiro {
 	display: none;
 	flex-direction: column;
+	position: relative;
 }
 
 section.info-parceiro.selected {
 	display: flex;
-	margin-top: -300px;
-	margin-bottom: 90px;
 }
 
 section.info-parceiro h1 {
@@ -170,12 +169,13 @@ div p {
 }
 
 section.info-parceiro img#linha-branca {
-	width: 20vw;
+	width: 400px;
 	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
 	object-fit: cover;
 	object-position: center;
 	transform: rotate(180deg);
 	transform: rotateX(180deg);
-	margin-top: 120px;
-	margin-bottom: -60px;
 }
