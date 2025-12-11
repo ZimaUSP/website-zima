@@ -1,13 +1,22 @@
 const carousel = document.querySelectorAll("div.carousel");
-const rolagem = 250;
+// const rolagem = 250;
 
 // document.querySelectorAll("div.carousel .carousel-btn#next")[0].parentNode.querySelector("ul.images")
+var testbtn
 function scrollNext(btn) {
-	btn.target.parentNode.querySelector("ul.images").scrollLeft += rolagem;
+	console.log("scroll next");
+	console.log(btn);
+	testbtn = btn;
+	let rolagem = btn.target.parentNode.parentNode.querySelector("ul.itens li").offsetWidth
+	btn.target.parentNode.parentNode.querySelector("ul.itens").scrollLeft += rolagem;
 }
 
 function scrollPrev(btn) {
-	btn.target.parentNode.querySelector("ul.images").scrollLeft -= rolagem;
+	let rolagem = btn.target.parentNode.parentNode.querySelector("ul.itens li").offsetWidth
+	btn.target.parentNode.parentNode.querySelector("ul.itens").scrollLeft -= rolagem;
+	console.log("scroll prev");
+	console.log(btn);
+	testbtn = btn;
 }
 
 function mudar_tabela(n) {

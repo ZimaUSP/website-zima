@@ -9,14 +9,11 @@ main p {
 	line-height: 1.5;
 	margin: 10px;
 	text-align: justify;
-	text-align: justify;
 	font-family: "Open Sans", sans-serif;
   	font-optical-sizing: auto;
   	font-weight: 350;
   	font-style: normal;
   	font-size: 2rem;
-	margin-bottom: 20px;
-	margin-right: 40px;
 }
 
 .about {
@@ -254,14 +251,13 @@ div.nossa-historia h2{
     -webkit-text-stroke: 1px white;
 }
 
-div.carousel-historia {
+div.carousel#historia {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	margin-bottom: 60px;
 }
 
-div.carousel-historia .carousel-historia-btn {
+div.carousel#historia .carousel-btn {
 	margin: 20px;
 	display: flex;
 	align-items: center;
@@ -276,7 +272,7 @@ div.carousel-historia .carousel-historia-btn {
 	color: white;
 }
 
-div.carousel-historia ul{
+div.carousel#historia ul{
 	display: flex;
 	list-style: none;
 	width: 100%;
@@ -286,7 +282,7 @@ div.carousel-historia ul{
 	scroll-behavior: smooth;
 }
 
-div.carousel-historia ul li {
+div.carousel#historia ul li {
 	display: block;
 	scroll-snap-align: center;
 	font-size: 2.5rem;
@@ -299,7 +295,7 @@ div.carousel-historia ul li {
 	text-align: left;
 }
 
-.carousel-historia ul li h3 {
+.carousel#historia ul li h3 {
 	font-family: "Open Sans", sans-serif;
   	font-optical-sizing: auto;
   	font-weight: 1550;
@@ -307,19 +303,17 @@ div.carousel-historia ul li {
 	letter-spacing: 3px;
 }
 
-.carousel-historia ul li p {
+.carousel#historia ul li p {
 	text-align: left;
 }
 
-div.carousel {
+div.carousel#images {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: 10px 20px;
-	margin-bottom: 60px;
 }
 
-div.carousel .carousel-btn {
+div.carousel#images .carousel-btn {
 	margin: 20px;
 	display: flex;
 	align-items: center;
@@ -334,7 +328,7 @@ div.carousel .carousel-btn {
 }
 
 
-div.carousel ul{
+div.carousel#images ul{
 	display: flex;
 	list-style: none;
 	width: 100%;
@@ -345,9 +339,9 @@ div.carousel ul{
 	scroll-behavior: smooth;
 }
 
-div.carousel ul li {
-	display: block;
-	border-radius: 10%;
+div.carousel#images ul li {
+	width: 400px;
+	border-radius: 30px;
 	border-width: 2px;
 	border-style: solid;
 	border-color: white;
@@ -356,7 +350,6 @@ div.carousel ul li {
 	padding: 15px;
 	box-sizing: content-box;
 	flex: 0 0 auto;
-	width: 30vw;
 }
 
 .carousel ul li h3 {
@@ -372,26 +365,26 @@ div.carousel ul li {
 	font-size: 1.6rem;
 }
 
-div.carousel ul li:nth-child(3n) {
+div.carousel#images ul li:nth-child(3n) {
 	background-color: #024aad;
 	background-image: linear-gradient(180deg, #4d02ad, #101728);
 }
 
-div.carousel ul li:nth-child(3n+1) {
+div.carousel#images ul li:nth-child(3n+1) {
 	background-color: #024aad;
 	background-image: linear-gradient(180deg, #ad199e, #101728);
 }
 
-div.carousel ul li:nth-child(3n+2) {
+div.carousel#images ul li:nth-child(3n+2) {
 	background-color: #024aad;
 	background-image: linear-gradient(180deg, #024aad, #101728);
 }
 
 
-div.carousel ul img {
-	width: 30vw;
-	height: 15vw;
-	border-radius: 10%;
+div.carousel#images ul img {
+	width: 100%;
+	height: 150px;
+	border-radius: 30px;
 	object-fit: cover;
 	object-position: center;
 }
