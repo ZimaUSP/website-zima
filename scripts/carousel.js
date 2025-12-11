@@ -5,7 +5,7 @@ const carousel = document.querySelectorAll("div.carousel");
 var testbtn
 function scrollNext(btn) {
 	console.log("scroll next");
-	console.log(btn);
+	console.log(btn.target);
 	testbtn = btn;
 	let rolagem = btn.target.parentNode.parentNode.querySelector("ul.itens li").offsetWidth
 	btn.target.parentNode.parentNode.querySelector("ul.itens").scrollLeft += rolagem;

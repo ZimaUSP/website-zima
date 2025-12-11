@@ -251,6 +251,11 @@ div.nossa-historia h2{
     -webkit-text-stroke: 1px white;
 }
 
+/* make sure only the svg element dispatches the mouse click event */
+div.carousel svg * {
+	pointer-events: none;
+}
+
 div.carousel#historia {
 	width: 100%;
 	display: flex;
