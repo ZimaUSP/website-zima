@@ -16,13 +16,14 @@ main p {
   	font-size: 2rem;
 }
 
+section {
+	padding: 30px;
+}
+
 .about {
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
 	gap: 10px;
-	margin-bottom: 60px;
-	margin-top: 60px;
 }
 
 .about .img {
@@ -149,7 +150,6 @@ div.stats h3 {
 
 div.content {
 	flex: 2;
-	margin-top: 40px;
 }
 
 .pilares h3 {
@@ -165,21 +165,19 @@ div.content {
 }
 
 .pilares {
-	height: 75vh;
+	height: 450px;
 	overflow: hidden;
 	text-align: center;
 	justify-content: space-evenly;
-	margin-top: -50px;
+	align-items: unset;
 }
 
 .pilares div {
 	width: 100%;
-	max-width: 30vw;
 }
 
 .pilares div img {
-	width: 50%;
-	max-height: 40vh;
+	width: 130px;
 	object-fit: cover;
 	object-position: top;
 	align-items: baseline;
@@ -188,16 +186,17 @@ div.content {
 .pilares div img#pilar-magenta {
 	transform:translateY(0px);
 	mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+	mask-position: 0 286px;
 }
 .pilares div img#pilar-lavender {
 	transform:translateY(50px);
 	mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-	mask-position: 0 214px;
+	mask-position: 0 238px;
 }
 .pilares div img#pilar-blue {
 	transform:translateY(100px);
 	mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-	mask-position: 0 180px;
+	mask-position: 0 224px;
 }
 
 .pilares div h2 {
@@ -235,10 +234,6 @@ div.content {
 }
 .pilares div h3#h3-blue{
 	transform:translateY(110px);
-}
-
-div.nossa-historia {
-	/* padding: 0px 200px; */
 }
 
 div.nossa-historia p{
@@ -300,7 +295,7 @@ div.carousel#historia ul li {
 	box-sizing: content-box;
 	flex: 0 0 auto;
 	position: relative;
-	width: 28vw;
+	width: 300px;
 	text-align: left;
 }
 
