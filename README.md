@@ -39,7 +39,7 @@ http://localhost:8000
 
 ---
 
-### 🔹 3. Usando o VS Code (Live Server)
+### 3. Usando o VS Code (Live Server)
 
 Se você utiliza o **VS Code**, pode instalar a extensão **Live Server** e iniciar o servidor clicando em:
 
