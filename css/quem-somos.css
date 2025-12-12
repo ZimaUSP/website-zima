@@ -186,12 +186,12 @@ div.content {
 .pilares div img#pilar-magenta {
 	transform:translateY(0px);
 	mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-	mask-position: 0 286px;
+	mask-position: 0 290px;
 }
 .pilares div img#pilar-lavender {
 	transform:translateY(50px);
 	mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-	mask-position: 0 238px;
+	mask-position: 0 240px;
 }
 .pilares div img#pilar-blue {
 	transform:translateY(100px);
