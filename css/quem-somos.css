@@ -17,13 +17,14 @@ main p {
 }
 
 section {
-	padding: 30px;
+	padding-top: 70px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .about {
 	display: flex;
 	justify-content: center;
-	gap: 10px;
 }
 
 .about .img {
@@ -33,9 +34,9 @@ section {
 }
 
 .about .img img {
-	width: 200px;
-	height: 100%;
+	height: 80%;
 	object-fit: cover;
+	justify-self: center;
 }
 
 .about .info {
@@ -47,7 +48,9 @@ section {
 }
 
 .about .info p {
-	padding: 20px;
+	padding-top: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .about .info img {
@@ -81,7 +84,7 @@ section {
 	width: 170px;
 	max-width: 100%;
 	height: auto;
-	margin: 0 200px;
+	margin: 0 170px;
 	object-fit: contain;
 	opacity: 0.5;
 	filter:
@@ -106,11 +109,11 @@ section {
 	padding: 10px 30px;
 	border-radius: 30px;
 	border: 2px solid white;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	font-family: "Bebas Neue", sans-serif;
   	font-weight: 100;
   	font-style: normal;
-	word-spacing: 20px;
+	word-spacing: 15px;
 	letter-spacing: 10px;
 }
 
