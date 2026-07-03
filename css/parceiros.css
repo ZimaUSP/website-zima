@@ -37,9 +37,9 @@ section.select-parceiro #img-SW {
 	height: 120px;
 }
 
-section.select-parceiro #img-circuibras3 {
-	top: 10px;
-	right: -190px;
+section.select-parceiro #img-ligadis {
+	top: 20px;
+	left: 20px;
 	position: relative;
 	width: 150px;
 	height: 150px;
@@ -47,34 +47,26 @@ section.select-parceiro #img-circuibras3 {
 
 section.select-parceiro #img-ADP {
 	top: -150px;
-	left: 40px;
+	right: 40px;
 	position: relative;
 	width: 160px;
 	height: 160px;
 }
 
-section.select-parceiro #img-Ansys {
-	top: -80px;
-	right: -240px;
+section.select-parceiro #img-mcworks {
+	bottom: 100px;
+	left: 180px;
 	position: relative;
 	width: 120px;
 	height: 120px;
 }
 
-section.select-parceiro #img-circuibras7 {
-	top: -320px;
+section.select-parceiro #img-stmicro {
+	bottom: 250px;
 	right: -110px;
 	position: relative;
 	width: 120px;
 	height: 120px;
-}
-
-section.select-parceiro #img-circuibras8 {
-	top: -130px;
-	right: -80px;
-	position: relative;
-	width: 150px;
-	height: 150px;
 }
 
 section.select-parceiro #img-central img {
@@ -83,6 +75,22 @@ section.select-parceiro #img-central img {
 	position: relative;
 	top: -20%;
     left: 42%;
+}
+
+#raios-linha-2{
+	z-index: -1;;
+	position: relative;
+}
+
+#raios-linha-1{
+	z-index: -1;;
+	position: relative;
+}
+
+section.select-parceiro #raio1{
+	bottom: 50px;
+	left: 50px;
+	transform: rotate(45deg);
 }
 
 section.select-parceiro img {
