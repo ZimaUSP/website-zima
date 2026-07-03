@@ -2,6 +2,7 @@ main {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1280px;
+	margin-bottom: 50px;
 }
 
 main p {
@@ -51,6 +52,13 @@ section {
 	padding-top: 40px;
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+.line {
+	border: 1px solid #21345D;
+	align-self: stretch;
+	margin: 10px 10px;
+	padding: 0;
 }
 
 .about .info img {
