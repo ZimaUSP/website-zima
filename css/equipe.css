@@ -150,8 +150,9 @@ main h3{
 }
 
 .capitania h3 {
-	transform: translate(-200%, 50%);
+	transform: translate(-200%, 150%);
 	background-color: #2b3a70;
 	padding: 10px;
 	border-radius: 10px;
+	height: fit-content;
 }
