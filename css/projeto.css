@@ -54,15 +54,35 @@ div.img {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding: 20px;
-	margin: 20px;
+	margin-bottom:20px;
+	margin-right: 20px;
 	min-width: 400px;
-	width: 400px;
+	width: 300px;
 	height: 400px;
+	gap: 8px;
 }
 
 div.img img {
+	height: 100%;
 	width: 100%;
+	object-fit: contain;
+}
+
+#legenda {
+	font-size: 1.2rem;
+}
+
+#hema-velho{
+	position: relative;
+	top: 60px;
+}
+
+#hema-modulo1{
+	transform:scale(1.9);
+}
+
+#ciclo-sem-fundo{
+	transform:scale(1.7)
 }
 
 div.caption {
