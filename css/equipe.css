@@ -122,8 +122,8 @@ main h3{
 }
 
 .membro-atual{
-	width: 100px;
-	height: 100px;
+	width: 120px;
+	height: 120px;
 	border-radius: 100%;
 	object-fit: cover;
 	z-index: 0;
@@ -137,19 +137,24 @@ main h3{
 	align-items: center;
 }
 
+#mecbordaborder{
+	transform: rotate(20deg);
+	transform: scale(1.3);
+}
+
 .side-by-side {
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
 }
 
-.capitania{
+.atual{
 	display: flex;
 	flex-direction: row;
 	padding: 40px;
 }
 
-.capitania h3 {
+.atual h3 {
 	transform: translate(-200%, 150%);
 	background-color: #2b3a70;
 	padding: 10px;
