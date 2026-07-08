@@ -1,7 +1,11 @@
 const bar = document.querySelectorAll("div.collapsible-bar");
 
 function collapse(event) {
-    event.currentTarget.classList.toggle("collapse");
+    if (event.target.closest(".carousel")) return; 
+    if (event.target.closest(".btn-colapsar")) {
+        event.stopPropagation();
+        event.currentTarget.classList.toggle("collapse");
+    }
 }
 
 bar.forEach(e => {

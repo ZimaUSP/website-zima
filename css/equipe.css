@@ -5,11 +5,22 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	font-family:'Lexend Deca', sans-serif;
+	font-weight: 300;
 }
 
 main h2 {
 	font-size: 4rem;
 	margin: 10px;
+	font-family: "Lexend Deca", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 450;
+  	font-style: normal;
+}
+
+main h3 {
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: 600;
 }
 
 section {
@@ -24,16 +35,27 @@ div.section-bar {
 	cursor: pointer
 }
 
-div.collapsible-bar {
+#timeline{
 	background-color: #2b3a70;
 }
 
-div.section-bar * {
+div.section-bar *{
 	pointer-events: none;
 	user-select: none;
 }
 
-.collapse div:not(.collapsible-bar) {
+div.section-bar .btn-colapsar,
+div.section-bar .btn-colapsar *,
+div.section-bar .carousel,
+div.section-bar .carousel * {
+    pointer-events: all;
+}
+
+/*.collapse div:not(.collapsible-bar) {
+	display: none;
+}*/
+
+.collapse .carousel {
 	display: none;
 }
 
@@ -96,17 +118,53 @@ ul.itens img {
 	object-position: center;
 }
 
+#section-title{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+#section-title img{
+	display: block;
+}
+
 #borda-top {
-	width: 120px;
+	width: 180px;
 	height: 30px;
 	transform: scaleY(-1);
+	z-index: -1;
+}
+
+#borda-top-coord {
+	width:200px;
+	height: 30px;
+	transform: scaleY(-1);
+	z-index: -1;
+}
+
+#borda-top-equipe {
+	width:140px;
+	height: 30px;
+	transform: scaleY(-1);
+	z-index: -1;
+}
+
+#section-title h3{
+	font-size: 2rem;
+	top: 50px;
+	left: 10px;
+	z-index: 1;
+	position: relative;
 }
 
 #borda-bottom {
-	width: 120px;
+	width: 150px;
 	height: 30px;
 	transform: rotate(180deg);
 	transform: scaleX(-1);
+	z-index: 0;
+	align-items: center;
 }
 
 main h3{
@@ -137,8 +195,21 @@ main h3{
 	align-items: center;
 }
 
+#eletborder1 {
+	transform: rotate(-180deg);
+}
+
+#eletborder2 {
+	transform: rotate(0deg);
+}
+
 #mecbordaborder{
 	transform: rotate(20deg);
+	transform: scale(1.3);
+}
+
+#mecmeioborder{
+	transform: rotate(-20deg);
 	transform: scale(1.3);
 }
 
@@ -160,4 +231,84 @@ main h3{
 	padding: 10px;
 	border-radius: 10px;
 	height: fit-content;
+}
+
+#eletrônica{
+	background-color: #3283ef;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#computacao{
+	background-color: #9340ff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#mecanica{
+	background-color: #fd178c;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#comunicacao{
+	background-color: #e47eb2;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#equipe_atual h3{
+	background-color: #2b3a70;
+	padding: 10px;
+	border-radius: 10px;
+	width: fit-content;
+}
+
+#caps{
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+
+#caps h3 {
+	background-color: #10172846;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#caps-side-by-side{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.btn-colapsar {
+    display: flex;
+	flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+	pointer-events: all;
+}
+
+/* seta para baixo (estado aberto) */
+.btn-colapsar svg {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+/* seta para cima (estado fechado) */
+.collapse .btn-colapsar svg {
+    transform: rotate(-90deg);
+}
+
+#collapse-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	padding: 5px 10px;
+	cursor: pointer
 }
