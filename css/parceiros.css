@@ -176,8 +176,12 @@ div p {
 	margin-top: 30px;
 }
 
+#title_parceiro{
+	position: relative;
+    width: fit-content;
+}
 section.info-parceiro img#linha-branca {
-	width: 400px;
+	width: 120%;
 	height: auto;
 	position: absolute;
 	left: 0;
