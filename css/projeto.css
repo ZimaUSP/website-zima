@@ -114,10 +114,6 @@ div.caption h3{
 	text-align: center;
 }
 
-.coluna{
-	/* min-width: 500px; */
-}
-
 div.caption p {
 	font-size: 2.0rem;
 	font-family: "open sans", sans-serif;
@@ -149,4 +145,53 @@ div#buttons {
 	font-weight: 200;
 	font-style: normal;
 	border-radius: 10px;
+}
+
+div.carousel svg *{
+	pointer-events: none;
+}
+
+.carousel{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.carousel-btn {
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	text-align: center;
+	flex: 0 0 auto;
+	font-size: 2rem;
+	user-select: none;
+	color: white;
+}
+
+div.carousel ul{
+	display: flex;
+	list-style: none;
+	width: 100%;
+	padding: 10px;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+}
+
+div.carousel ul li {
+	display: block;
+	scroll-snap-align: center;
+	font-size: 2.5rem;
+	list-style-type: none;
+	padding: 10px;
+	box-sizing: content-box;
+	flex: 0 0 auto;
+	position: relative;
+	width: 300px;
+	text-align: left;
 }
