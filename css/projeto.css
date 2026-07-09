@@ -85,6 +85,15 @@ div.img img {
 	transform:scale(1.7)
 }
 
+#golgi{
+	transform: scale(1.7);
+}
+
+#mini-golgi{
+	position: relative;
+	top: 30px;
+}
+
 div.caption {
 	/* width: 90vw; */
 	/* height: 70vh; */
