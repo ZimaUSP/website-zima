@@ -5,7 +5,7 @@ main {
 }
 
 main p {
-	font-size: 2rem;
+	font-size: 1.7rem;
 	line-height: 1.5;
 	margin: 10px;
 	text-align: justify;
@@ -223,4 +223,74 @@ div.carousel ul li {
 	position: relative;
 	width: 300px;
 	text-align: left;
+}
+
+.linha_do_tempo{
+	display: flex;
+	flex-direction: column;
+	margin-top:30px;
+	margin-bottom: 30px;
+}
+
+.side-by-side{
+	display:flex;
+	flex-direction: row;
+	align-items: stretch;
+	margin: 20px;
+}
+
+.lateral{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.lateral .img-wrapper{
+	width: 60px;   
+	height: 100px; 
+	position: relative;
+	margin-top: auto; 
+}
+
+.lateral .img-wrapper img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 60px;
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.lateral .svg-wrapper{
+	flex: 1;                  /* ocupa todo o espaço vazio acima da imagem */
+	container-type: size;     /* habilita unidades cqh nos filhos */
+	position: relative;
+	width: 100%;
+}
+
+.lateral .svg-wrapper svg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100cqh;
+	height: 50px;
+	transform: translate(-50%, -50%) rotate(90deg) scaleY(2); /* engorda sem mudar comprimento */
+}
+
+.lateral h2{
+	background-color: #2b3a70;
+	padding: 10px;
+	border-radius: 30px;
+	width: 200px;
+	margin-left: 50px;
+	align-self: baseline;
+}
+
+.conteudo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 20px;
 }
