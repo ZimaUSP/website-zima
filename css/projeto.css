@@ -294,3 +294,7 @@ div.carousel ul li {
 	justify-content: flex-start;
 	margin: 20px;
 }
+
+.conteudo img{
+	width: 400px;
+}
