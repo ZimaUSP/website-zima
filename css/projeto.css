@@ -298,3 +298,12 @@ div.carousel ul li {
 .conteudo img{
 	width: 400px;
 }
+
+.conteudo p {
+	margin: 30px;
+}
+
+#foto-ruim {
+	width:300px;
+	margin: 30px;
+}
